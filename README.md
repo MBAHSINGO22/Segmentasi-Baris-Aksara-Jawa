@@ -138,6 +138,4 @@ smooth = np.convolve(projection, kernel_avg, mode='same')
 Eugenius Kriswinar Adi Cahya
 </p>
 
-<hr>
 
-<h2>📄 License</h2>
