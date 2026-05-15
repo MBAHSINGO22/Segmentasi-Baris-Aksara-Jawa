@@ -1,8 +1,4 @@
-<h1 align="center">Segmentasi Baris Tulisan Aksara Jawa Menggunakan OpenCV</h1>
-
-<p align="center">
-  Project segmentasi baris tulisan aksara Jawa menggunakan Python dan OpenCV
-</p>
+<h1 align="center">Segmentasi Baris Tulisan Aksara Jawa</h1>
 
 <hr>
 
