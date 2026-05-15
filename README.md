@@ -141,7 +141,3 @@ Eugenius Kriswinar Adi Cahya
 <hr>
 
 <h2>📄 License</h2>
-
-<p>
-This project is intended for educational and research purposes.
-</p>
