@@ -1,30 +1,33 @@
-<h1 align="center">Text Line Segmentation using OpenCV</h1>
+<h1 align="center">Segmentasi Baris Tulisan Aksara Jawa Menggunakan OpenCV</h1>
 
 <p align="center">
-  Project for text line segmentation using Python and OpenCV
+  Project segmentasi baris tulisan aksara Jawa menggunakan Python dan OpenCV
 </p>
 
 <hr>
 
-<h2>📌 Description</h2>
+<h2>📌 Deskripsi</h2>
 
 <p>
-This project performs text line segmentation from an input image using image processing techniques with Python and OpenCV. 
-The system detects text lines using horizontal projection analysis and separates each line into individual image segments.
+Project ini dibuat untuk melakukan segmentasi baris pada tulisan aksara Jawa menggunakan teknik pengolahan citra digital dengan Python dan OpenCV.
+Program akan mendeteksi setiap baris tulisan dari gambar aksara Jawa menggunakan metode horizontal projection, kemudian memisahkan setiap baris menjadi potongan gambar tersendiri.
 </p>
 
-<p>Suitable for:</p>
+<p>
+Project ini cocok digunakan untuk:
+</p>
 
 <ul>
-  <li>Document image processing</li>
-  <li>OCR preprocessing</li>
-  <li>Handwritten text segmentation</li>
-  <li>Computer vision learning projects</li>
+  <li>Preprocessing OCR aksara Jawa</li>
+  <li>Pengolahan citra digital</li>
+  <li>Segmentasi tulisan tangan</li>
+  <li>Pembelajaran computer vision</li>
+  <li>Penelitian aksara Jawa</li>
 </ul>
 
 <hr>
 
-<h2>🛠 Technologies Used</h2>
+<h2>🛠 Teknologi yang Digunakan</h2>
 
 <ul>
   <li>Python</li>
@@ -36,38 +39,40 @@ The system detects text lines using horizontal projection analysis and separates
 
 <hr>
 
-<h2>✨ Features</h2>
+<h2>✨ Fitur</h2>
 
 <ul>
-  <li>Image upload using Google Colab</li>
-  <li>Grayscale conversion</li>
-  <li>Gaussian Blur preprocessing</li>
-  <li>Binary thresholding using Otsu method</li>
-  <li>Morphological image processing</li>
-  <li>Horizontal projection analysis</li>
-  <li>Peak detection for text lines</li>
-  <li>Automatic text line segmentation</li>
-  <li>Visualization of segmentation results</li>
+  <li>Upload gambar langsung melalui Google Colab</li>
+  <li>Konversi gambar ke grayscale</li>
+  <li>Pengurangan noise menggunakan Gaussian Blur</li>
+  <li>Thresholding biner menggunakan metode Otsu</li>
+  <li>Operasi morfologi untuk memperjelas tulisan</li>
+  <li>Perhitungan horizontal projection</li>
+  <li>Deteksi puncak untuk menentukan baris tulisan</li>
+  <li>Segmentasi otomatis setiap baris aksara Jawa</li>
+  <li>Menyimpan hasil segmentasi menjadi gambar terpisah</li>
+  <li>Visualisasi hasil segmentasi</li>
 </ul>
 
 <hr>
 
-<h2>⚙️ Project Workflow</h2>
+<h2>⚙️ Alur Program</h2>
 
 <ol>
-  <li>Import required libraries</li>
-  <li>Upload image</li>
-  <li>Preprocess image</li>
-  <li>Apply thresholding</li>
-  <li>Calculate horizontal projection</li>
-  <li>Detect text line peaks</li>
-  <li>Determine segmentation boundaries</li>
-  <li>Crop and save segmented lines</li>
+  <li>Mengimpor library yang dibutuhkan</li>
+  <li>Mengupload gambar aksara Jawa</li>
+  <li>Melakukan preprocessing gambar</li>
+  <li>Mengubah gambar menjadi biner</li>
+  <li>Menghitung horizontal projection</li>
+  <li>Mendeteksi posisi baris tulisan</li>
+  <li>Menentukan batas segmentasi</li>
+  <li>Memotong setiap baris tulisan</li>
+  <li>Menyimpan hasil segmentasi</li>
 </ol>
 
 <hr>
 
-<h2>📂 Folder Structure</h2>
+<h2>📂 Struktur Folder</h2>
 
 <pre>
 project-folder/
@@ -75,22 +80,20 @@ project-folder/
 ├── VIKASABARU_235314099.ipynb
 ├── hasil_baris/
 │   ├── line_1.png
-│   ├── line_2.png
-│   └── ...
 └── README.md
 </pre>
 
 <hr>
 
-<h2>🚀 Installation</h2>
+<h2>🚀 Instalasi</h2>
 
 <p>Clone repository:</p>
 
 <pre>
-git clone https://github.com/your-username/your-repository-name.git
+git clone https://github.com/username/nama-repository.git
 </pre>
 
-<p>Install dependencies:</p>
+<p>Install dependency:</p>
 
 <pre>
 pip install opencv-python numpy matplotlib
@@ -98,18 +101,18 @@ pip install opencv-python numpy matplotlib
 
 <hr>
 
-<h2>▶️ Usage</h2>
+<h2>▶️ Cara Menjalankan</h2>
 
 <ol>
-  <li>Open notebook in Google Colab or Jupyter Notebook</li>
-  <li>Upload handwritten/document image</li>
-  <li>Run all cells</li>
-  <li>View segmentation results</li>
+  <li>Buka notebook di Google Colab atau Jupyter Notebook</li>
+  <li>Upload gambar tulisan aksara Jawa</li>
+  <li>Jalankan seluruh cell program</li>
+  <li>Lihat hasil segmentasi baris</li>
 </ol>
 
 <hr>
 
-<h2>💻 Example Code</h2>
+<h2>💻 Contoh Kode</h2>
 
 <pre>
 projection = np.sum(clean == 255, axis=1)
@@ -120,14 +123,14 @@ smooth = np.convolve(projection, kernel_avg, mode='same')
 
 <hr>
 
-<h2>📈 Future Improvements</h2>
+<h2>📈 Pengembangan Selanjutnya</h2>
 
 <ul>
-  <li>Character segmentation</li>
-  <li>Word segmentation</li>
-  <li>OCR integration</li>
-  <li>Deep learning text detection</li>
-  <li>Multi-column document support</li>
+  <li>Segmentasi karakter aksara Jawa</li>
+  <li>Integrasi OCR aksara Jawa</li>
+  <li>Pengenalan karakter menggunakan Deep Learning</li>
+  <li>Peningkatan akurasi segmentasi</li>
+  <li>Dukungan untuk berbagai jenis tulisan tangan</li>
 </ul>
 
 <hr>
@@ -138,4 +141,10 @@ smooth = np.convolve(projection, kernel_avg, mode='same')
 Eugenius Kriswinar Adi Cahya
 </p>
 
+<hr>
 
+<h2>📄 License</h2>
+
+<p>
+Project ini dibuat untuk kebutuhan pembelajaran dan penelitian.
+</p>
